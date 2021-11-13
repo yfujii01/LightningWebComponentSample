@@ -1,0 +1,8 @@
+.color0 { filter: saturate(3); }
+.color1 { filter: grayscale(100%); }
+.color2 { filter: contrast(160%); }
+.color3 { filter: brightness(0.25); }
+.color4 { filter: invert(100%); }
+.color5 { filter: sepia(100%); }
+.color6 { filter: hue-rotate(180deg); }
+.color7 { filter: opacity(50%); }
