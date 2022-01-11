@@ -28,7 +28,16 @@ export default class ActivityListComponent extends LightningElement {
     console.log(event.target.value);
 
     this.filteredData = this.data.filter((d) => {
-      return d.Subject.includes(event.target.value);
+      // すべてのプロパティを検索する
+      for (const prop in d) {
+          const bool = d[prop].includes(event.target.value);
+          if (bool) {
+              return bool;
+          }
+      }
+
+      // 特定のプロパティを検索する      
+      // return d.Subject.includes(event.target.value);
     });
 
     console.log(this.filteredData);
